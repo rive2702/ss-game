@@ -18,6 +18,27 @@ body {
     max-height: 60vh;
     max-width: 60vh;
 }  
+
+.t_i {
+    padding-left: 50px;
+    
+}
+
+.t_i h2,
+.t_i h3 {
+    color: white;
+}
+
+.t_i p {
+    background-color: #000000;
+    backdrop-filter: blur(10px);
+    padding: 15px;
+    -webkit-backdrop-filter: blur(10px);
+    width: 300px;
+    color: rgb(255, 255, 255);
+    border-radius: 15px;
+}
+
 .color {
     width: 50%;
     height: 50%;

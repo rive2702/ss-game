@@ -5,6 +5,7 @@ const color3 = document.getElementById('c3')
 const color4 = document.getElementById('c4')
 const btnStart = document.getElementById('btnStart')
 const maxLevel = 5
+const t_i = document.getElementById('t_i')
 	
 
 //Creating class
@@ -21,6 +22,7 @@ class SS_Game {
 		this.nextLevel = this.nextLevel.bind(this)
 		this.chooseColor = this.chooseColor.bind(this)
 		this.BtnStart()
+		this.instructions()
 		this.level = 1
 		this.colores = {
 			color1,
@@ -37,6 +39,16 @@ class SS_Game {
 			btnStart.classList.add('hide')
 		  }
 	  }
+
+	//Showing instructions
+	instructions() {
+		if (t_i.classList.contains('hide')) {
+			t_i.classList.remove('hide')
+		}else {
+			t_i.classList.add('hide')
+		  }
+	  }
+	
 	
 	secuence() {
 		this.secuencia =  new Array(maxLevel).fill(0).map( n => Math.floor(Math.random() * 4))
